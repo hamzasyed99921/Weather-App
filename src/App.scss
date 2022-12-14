@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.weather_bg{
+    height: 100vh;
+    background-color: "#f5f6f7";
+    .container{
+    .card{
+        .bg-image{
+            img{
+                
+            }
+        }
+       .card_txt{
+        h4{
+            font-size: 32px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+       }
+    }
+    }
+}
