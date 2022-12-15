@@ -5,16 +5,6 @@ const Hero = () => {
   const [city, setCity] = useState(null);
   const [search, setSearch] = useState("islamabad");
 
-  // const apiKey = 'adc26b038e1a888490f8ffa1fe02d32b';
-
-  // const fetchApi = () => {
-  //   const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=adc26b038e1a888490f8ffa1fe02d32b`;
-  //   axios.get(url).then((res) => {
-  //     console.log(res);
-  //   }).catch((err) =>{
-  //     console.log(err);
-  //   })
-  // }
 
   useEffect(() => {
     const fetchApi = async () => {
@@ -36,10 +26,16 @@ const Hero = () => {
             <div className="col-md-10 col-lg-8 col-xl-6">
               <div className="card">
                 <div className="bg-image" style={{ borderRadius: 35 }}>
-                  <img
+                  {/* <img
                     src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/draw1.webp"
                     className="card-img"
                     alt="weather"
+                  /> */}
+                  <img
+                    src="assets/images/weather.jpg"
+                    className="card-img"
+                    alt="weather"
+                    style={{opacity: '1'}}
                   />
                   <div
                     className="mask"
@@ -58,7 +54,7 @@ const Hero = () => {
                     />
                   </div>
                   {!city ? (
-                    "No data Found"
+                    <h2 className="text-white">No Data Found</h2>
                   ) : (
                     <div className="card_txt">
                       <h4 className="mb-0">{search}</h4>
